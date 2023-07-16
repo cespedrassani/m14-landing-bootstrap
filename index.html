@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Bootstrap</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <img
+            src="./src/images/travelto.jpg"
+            alt=""
+            class="logo-img me-3 mb-1"
+          />
+          <h1 class="navbar-brand section-title m-0">
+            <span class="fw-bold">TravelTo</span>
+          </h1>
+        </div>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav
+          class="navbar-collapse collapse justify-content-end"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex">
+            <li class="nav-item fw-bold">
+              <a href="#sobre" class="nav-link">
+                <i class="bi bi-house-door me-1"></i>
+                Sobre
+              </a>
+            </li>
+
+            <li class="nav-item fw-bold">
+              <a href="#servicos" class="nav-link">
+                <i class="bi bi-calendar-check me-1"></i>
+                Serviços
+              </a>
+            </li>
+
+            <li class="nav-item fw-bold">
+              <a href="#destinos" class="nav-link">
+                <i class="bi bi-airplane me-1"></i>
+                Destinos
+              </a>
+            </li>
+
+            <li class="nav-item fw-bold">
+              <a href="#contato" class="nav-link">
+                <i class="bi bi-chat-left-text me-1"></i>
+                Fale conosco
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="cabecalho"
+      data-bs-smooth-scroll="true"
+    >
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <div class="d-flex justify-content-center">
+              <img src="./src/images/slider-1.jpg" class="image-fluid" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="d-flex justify-content-center">
+              <img
+                src="./src/images/slider-2.jpeg"
+                class="image-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="d-flex justify-content-center">
+              <img
+                src="./src/images/slider-3.jpeg"
+                class="image-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button
+            class="active"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+      </div>
+
+      <section id="sobre">
+        <div class="container">
+          <div class="pt-5 pb-5">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="./src/images/sobre.jpg"
+                  class="d-block w-100 rounded"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-7 mt-3 mt-md-0">
+                <h2 class="section-title">
+                  Seja <span class="text-colored">bem-vindo</span>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  vero neque repudiandae perspiciatis odio adipisci fuga rerum
+                  ab accusantium, tempore laborum dignissimos numquam, iure iste
+                  voluptas earum eveniet quisquam doloribus?
+                </p>
+                <p>
+                  Sed placerat molestie tellus at vulputate. Etiam at turpis non
+                  nibh varius convallis. Duis nibh orci, ultricies vel fermentum
+                  at, tincidunt ac nunc. Nunc gravida ullamcorper maximus. Cras
+                  blandit magna ante. Donec vel purus eu massa efficitur rutrum.
+                  Pellentesque at sapien ipsum. Aenean aliquet sed libero eget
+                  pellentesque. Duis vestibulum consectetur tincidunt. Sed eget
+                  nisi et quam placerat ultricies.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  vero neque repudiandae perspiciatis odio adipisci fuga rerum
+                  ab accusantium, tempore laborum dignissimos numquam, iure iste
+                  voluptas earum eveniet quisquam doloribus?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              Nós cuidamos <span class="text-colored">de tudo</span>
+            </h2>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img
+                src="./src/images/passagem.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-4"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-airplane-fill"></i>
+                Passagens
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                possimus beatae, architecto mollitia similique eveniet quo magni
+                omnis, ratione ab veniam porro cum velit distinctio sapiente
+                accusamus, assumenda consectetur error.
+              </p>
+            </div>
+
+            <div class="col-md-4">
+              <img
+                src="./src/images/hotel.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-4"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-house-fill"></i>
+                Hospedagem
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                possimus beatae, architecto mollitia similique eveniet quo magni
+                omnis, ratione ab veniam porro cum velit distinctio sapiente
+                accusamus, assumenda consectetur error.
+              </p>
+            </div>
+
+            <div class="col-md-4">
+              <img
+                src="./src/images/seguro-viagem.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-4"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-bag-heart-fill"></i>
+                Seguro Viagem
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                possimus beatae, architecto mollitia similique eveniet quo magni
+                omnis, ratione ab veniam porro cum velit distinctio sapiente
+                accusamus, assumenda consectetur error.
+              </p>
+            </div>
+
+            <div class="col-md-4 mt-4">
+              <img
+                src="./src/images/translados.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-4"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-bus-front-fill"></i>
+                Translados
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                possimus beatae, architecto mollitia similique eveniet quo magni
+                omnis, ratione ab veniam porro cum velit distinctio sapiente
+                accusamus, assumenda consectetur error.
+              </p>
+            </div>
+
+            <div class="col-md-4 mt-4">
+              <img
+                src="./src/images/seguro-medico.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-4"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-clipboard2-pulse-fill"></i>
+                Seguro Médico
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                possimus beatae, architecto mollitia similique eveniet quo magni
+                omnis, ratione ab veniam porro cum velit distinctio sapiente
+                accusamus, assumenda consectetur error.
+              </p>
+            </div>
+
+            <div class="col-md-4 mt-4">
+              <img
+                src="./src/images/passaporte.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-4"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-person-vcard-fill"></i>
+                Passaportes
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                possimus beatae, architecto mollitia similique eveniet quo magni
+                omnis, ratione ab veniam porro cum velit distinctio sapiente
+                accusamus, assumenda consectetur error.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="destinos" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center mb-5">
+              Conheça os <span class="text-colored">destinos</span>
+            </h2>
+          </div>
+          <div class="row">
+            <aside class="col-sm-2 col-md-3 mb-4">
+              <nav class="nav nav-pills flex-column nav-destinos">
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#praias"
+                  class="fw-bold text-start nav-link text-colored active"
+                >
+                  Praias
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cidades"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  Cidades
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#historia"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  História
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#pratos-principais"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  Gastronomia
+                </button>
+              </nav>
+            </aside>
+
+            <div class="col-sm-10 col-md-9">
+              <div class="tab-content">
+                <div class="tab-pane active" id="praias">
+                  <div class="row" id="row-praias">
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/praia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Praia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/praia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Praia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/praia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Praia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/praia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Praia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/praia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Praia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/praia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Praia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/praia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Praia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/praia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Praia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="cidades">
+                  <div class="row">
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/cidade-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Cidade</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/cidade-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Cidade</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/cidade-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Cidade</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/cidade-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Cidade</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/cidade-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Cidade</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/cidade-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Cidade</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/cidade-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Cidade</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/cidade-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Cidade</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="historia">
+                  <div class="row">
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/historico-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Histórico</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/historico-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Histórico</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/historico-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Histórico</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/historico-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Histórico</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/historico-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Histórico</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/historico-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Histórico</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/historico-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Histórico</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/historico-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Histórico</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="pratos-principais">
+                  <div class="row">
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/gastronomia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Gastronomia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/gastronomia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Gastronomia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/gastronomia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Gastronomia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/gastronomia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Gastronomia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/gastronomia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Gastronomia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/gastronomia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Gastronomia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/gastronomia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Gastronomia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-3 col-md-4 col-lg-3">
+                      <img
+                        class="d-block w-100"
+                        src="./src/images/gastronomia-1.jpg"
+                        alt=""
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Gastronomia</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              Fale <span class="text-colored">conosco</span>
+            </h2>
+          </div>
+
+          <div class="row">
+            <div class="col-md-7 mb-5">
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label fw-bold text-colored">
+                    Nome
+                  </label>
+                  <input type="text" id="nome" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold text-colored">
+                    E-mail</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="telefone" class="form-label fw-bold text-colored">
+                    Telefone
+                  </label>
+                  <input type="tel" id="telefone" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label fw-bold text-colored">
+                    Mensagem
+                  </label>
+                  <textarea
+                    id="mensagem"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn bg-color-red fw-bold">
+                  Enviar
+                </button>
+              </form>
+            </div>
+
+            <div class="col-md-5">
+              <div class="row">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi br-hand-thumbs-up-fill"></i>
+                  Redes sociais
+                </h3>
+                <ul class="social-links">
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-facebook text-colored"></i>
+                    </a>
+                  </li>
+
+                  <li class="fs-5 ms-1 me-1">
+                    <a href="#">
+                      <i class="bi bi-instagram text-colored"></i>
+                    </a>
+                  </li>
+
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-whatsapp text-colored"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
